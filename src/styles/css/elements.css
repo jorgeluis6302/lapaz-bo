@@ -1,0 +1,158 @@
+.building {
+  position: absolute;
+  background: black;
+  height: 60vh;
+  width: 30vw;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+#illimani {
+  position: relative;
+  bottom: -580px;
+}
+
+#illimani .peak__1st,
+#illimani .peak__2nd,
+#illimani .peak__3rd {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 100px solid #fff;
+}
+
+.peak__1st {
+  left: 30%;
+}
+
+.peak__2nd {
+  left: 35%;
+}
+
+.peak__3rd {
+  left: 40%;
+}
+
+.peak__1st span,
+.peak__2nd span,
+.peak__3rd span {
+  border-top: 100px solid transparent;
+}
+
+.peak__1st span {
+  margin-left: -179px;
+  border-left: 160px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid #254b89;
+  display: block;
+  margin-top: -78px;
+}
+
+.peak__2nd span {
+  margin-left: -160px;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #3663aa;
+  display: block;
+  margin-top: -28px;
+}
+
+.peak__3rd span {
+  margin-left: -170px;
+  border-left: 190px solid transparent;
+  border-right: 210px solid transparent;
+  border-bottom: 100px solid #1e55ac;
+  display: block;
+  margin-top: -28px;
+}
+
+.building__1 {
+  height: 30vh;
+  left: 90%;
+  right: 20%;
+  width: 90px;
+  top: 520px;
+  display: block;
+  position: absolute;
+  background: rgb(36, 37, 36);
+}
+
+.building__2 {
+  height: 30vh;
+  left: 20%;
+  right: 20%;
+  width: 90px;
+  top: 520px;
+  display: block;
+  position: absolute;
+  background: rgb(36, 38, 36);
+}
+
+.building__3 {
+  height: 30vh;
+  left: 100%;
+  right: 50%;
+  width: 90px;
+  top: 520px;
+  display: block;
+  position: absolute;
+  background: rgb(36, 46, 36);
+}
+
+.building__4 {
+  height: 30vh;
+  left: 90%;
+  right: 70%;
+  width: 90px;
+  top: 520px;
+  display: block;
+  position: absolute;
+  background: rgb(36, 49, 36);
+}
+
+.building__5 {
+  height: 30vh;
+  left: 60%;
+  right: 90%;
+  width: 90px;
+  top: 520px;
+  display: block;
+  position: absolute;
+  background: rgb(36, 55, 36);
+}
+
+.windows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.window {
+  background: rgb(222, 228, 106);
+  height: 10px;
+  width: 10px;
+  width: 25%;
+  animation: blink 3s infinite;
+  box-shadow: 0px 0px 10px rgba(209, 209, 209, 0.2);
+}
+@keyframes blink {
+  0% {
+    box-shadow: 0px 0px 10px rgba(209, 209, 209, 0.2);
+  }
+  50% {
+    box-shadow: 0px 0px 10px rgba(209, 209, 209, 0.8);
+  }
+}
+
+.window__lights--off {
+  background: rgb(52, 52, 52);
+  height: 10px;
+  width: 10px;
+  width: 25%;
+}
+
+/*# sourceMappingURL=elements.css.map */

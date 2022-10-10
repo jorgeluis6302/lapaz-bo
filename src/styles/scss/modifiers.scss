@@ -1,0 +1,44 @@
+$soft-light: 0px 0px 30px 5px rgba(196, 208, 88, 0.1);
+
+@for $i from 1 to 100 {
+    .star--blink::after {
+        content: "\2B50";
+        display:block;
+        box-shadow: $soft-light;
+        animation: starblink 2s infinite;
+    }
+    
+    .start--blink:hover {
+        box-shadow: 0px 0px 30px 5px rgba(196, 208, 88, 0.415);
+        font-size: 30px;
+    }
+    
+    .star--blink:nth-of-type(#{$i}) {
+        position: absolute;
+        top: random(101) - 1 + vh;
+        left: random(101) - 1 + vw;
+        width: random(2) + px;
+        height: random(2) + px;
+        opacity: random(50) / 100 + 0.5;
+        transition: ease-in 0.5s;
+        z-index: 1;
+        font-size: random(6)+px;
+    }
+
+    .star--blink:nth-of-type(#{$i}):hover {
+        box-shadow: 0px 0px 30px 30px rgba(221, 233, 119, 0.1);
+    }
+
+    @keyframes starblink {
+        0% { 
+            box-shadow: $soft-light;
+        }
+        50% { 
+            box-shadow: 0px 0px 30px 5px rgba(196, 208, 88, 0.3);
+        }
+        100% { 
+            box-shadow: $soft-light;
+
+        }
+    }
+}

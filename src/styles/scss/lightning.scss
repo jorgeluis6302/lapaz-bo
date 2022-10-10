@@ -1,0 +1,27 @@
+#lightning {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    animation: 5s infinite lightning;
+    background: rgba(255, 255, 180, 0);
+}
+
+@keyframes lightning {
+    0% {
+        background: rgba(255, 255, 180, 0);
+    }
+    4% {
+        background: rgba(255, 255, 180, 0.084);
+    }
+    5% {
+        background: rgba(255, 255, 180, 0);
+    }
+    6% {
+        background: rgba(255, 255, 180, 0.084);
+    }
+    15% {
+        background: rgba(255, 255, 180, 0);
+    } 
+}

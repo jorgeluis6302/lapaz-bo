@@ -1,0 +1,15 @@
+$sky-color: rgb(4, 23, 48);
+
+body {
+    background: radial-gradient(200% 100% at bottom center, #313b65, #111453, #2b0a24, #040517);
+    background: radial-gradient(220% 200% at top center,  #040517,#374065);
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 0;
+}
+
+main {
+    position:relative;
+    width: 90%;
+    display: block;
+}
